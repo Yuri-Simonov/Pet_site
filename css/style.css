@@ -2075,6 +2075,90 @@ body a:hover {
   max-width: 100%;
 }
 
+.error {
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 83vh;
+}
+
+.error__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 42px;
+  text-transform: uppercase;
+  position: relative;
+  margin-left: 417px;
+  margin-bottom: 110px;
+}
+
+.error__title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 80%;
+  display: block;
+  background-image: url(../img/404.svg);
+  height: 240px;
+  width: 445px;
+}
+
+.error__back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.error__back-img {
+  margin-right: 20px;
+}
+
+.error__back-text {
+  font-size: 14px;
+  line-height: 110%;
+}
+
+.header__logo-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+}
+
 .footer {
   padding: 43px 50px 15px 45px;
   height: 100%;
@@ -2787,6 +2871,16 @@ body a:hover {
   .category .zoo-shop__name {
     margin-top: 12px;
     margin-bottom: 7px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .error {
+    margin-bottom: -100px;
+  }
+
+  .error__title {
+    zoom: 0.5;
   }
 }
 
